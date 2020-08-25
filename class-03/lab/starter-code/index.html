@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Gallery of Horns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/modules.css">
+</head>
+ 
+<body>
+  <header>
+    <script id="mustache-template" type='text/x-tmpl-mustache'>
+      <section class='{{keyword}}'>
+        <h2>{{title}}</h2>
+        <img src="{{url}}"></img>
+        <p id="desc">{{desc}}</p>
+      </section>
+    </script>
+    <h1>The Gallery of Horns</h1>
+    <select id='filter'>
+      <option id="default" value="default">Filter by Keyword</option>
+    </select>
+    <select id='sort'>
+      <option value="default" selected="selected" >Sort by</option>
+      <option value="alpha">Sort by Alphabetical order</option>
+      <option value="horns">Sort by Horns number</option>
+
+    </select>
+    <div class="buttons">
+      <button onclick="generatePictures('page-1')">Page 1</button>
+      <button onclick="generatePictures('page-2')">Page 2</button>
+    </div>
+  </header>
+  <main>
+    <div id="modal"></div>
+    <div id="container">
+    </div>
+  </main>
+  <footer>
+    &copy; 2018 Code Fellows
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
