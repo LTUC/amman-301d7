@@ -37,6 +37,8 @@ function Location (cityData,geoData) {
 }
 
 
+
+
 app.use('*',(req,res)=>{
     res.status(404).send('NOT FOUND');
 })
