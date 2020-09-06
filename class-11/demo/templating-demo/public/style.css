@@ -1,0 +1,7 @@
+body {
+    background-color: aqua;
+}
+
+li.sleeping {
+    text-decoration: line-through;
+}
