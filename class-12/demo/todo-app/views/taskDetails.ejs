@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>To-Do List</title>
+</head>
+
+
+<body>
+
+    <%- include('./layouts/header')%>
+ 
+
+    <main>
+        <section>
+            <% console.log('sssssssssss',task)%>
+            <ul>
+                <h4>Task title: <%= task.title%></h4>
+                <p>Desciption: <%= task.description %></p>
+                <p>Contact person: <%= task.contact %></p>
+                <p>Completion status: <%= task.status %></p>
+                <p>Category: <%= task.category %></p>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
