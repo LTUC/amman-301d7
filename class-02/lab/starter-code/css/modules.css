@@ -1,0 +1,17 @@
+section{
+    border: 2px solid black;
+}
+
+h1{
+    font-size: 36px;
+    background: rgba(211, 211, 211, 0.596);
+}
+
+select {
+    font-size: 24px;
+}
+
+section h2{
+    text-align: center;
+    color:red;
+}

@@ -1,0 +1,67 @@
+section{
+    border: 2px solid black;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    overflow-x: scroll;
+}
+
+h1{
+    font-size: 36px;
+    background: rgba(211, 211, 211, 0.596);
+}
+
+select {
+    font-size: 24px;
+    text-align: center;
+}
+
+section h2{
+    text-align: center;
+    color:red;
+    max-width: 250px;
+}
+
+
+#desc {
+    display: none;
+}
+
+
+
+#modal p {
+    display: block;
+}
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal img {
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#modal-content {
+    background:rgba(126, 128, 126, 0.575);
+}
+
+#modal p, #modal h2 {
+    color:white;
+    text-align: center;
+    overflow:unset;
+    width: auto;
+    font-size: 25px;
+}
